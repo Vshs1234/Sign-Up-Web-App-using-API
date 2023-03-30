@@ -31,10 +31,10 @@ app.post("/",function (req,res) {
         ]
       };
     const jsonData=JSON.stringify(data);
-    const url="https://us11.api.mailchimp.com/3.0/lists/d92cc506d7";
+    const url="https://us11.api.mailchimp.com/3.0/lists/dcc506d7";
     const options={
         method:"POST",
-        auth:"vshs:58570aa12f35cb27b116f9aee91cfb67-us11",
+        auth:"s:5570aa12f35cb27b116f9aee91cfb67-11",
     }
     const request=https.request(url,options,function (response){
         if(response.statusCode===200){
@@ -59,7 +59,3 @@ app.listen(3000,function () {
    console.log("server is running on port 3000"); 
 });
 
-//api key
-// 58570aa12f35cb27b116f9aee91cfb67-us11
-// list id  
-// d92cc506d7
